@@ -1,0 +1,14 @@
+name: nlp_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - nltk
+  - scikit-learn
+  - jupyter
+  - ipykernel
+  - matplotlib
+  - pandas
