@@ -1,0 +1,19 @@
+name: rl_env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - ipykernel
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip:
+    - gymnasium
+    - pygame
