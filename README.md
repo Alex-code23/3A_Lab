@@ -3,6 +3,7 @@
 create env
 ```
 conda env create -f INF582/nlp_environment.yml
+conda env create -f CSC_52081/rl_environment.yml   
 ```
 
 

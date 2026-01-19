@@ -1,19 +1,37 @@
 name: rl_env
 channels:
-  - defaults
-  - conda-forge
   - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
 dependencies:
   - python=3.10
   - pip
-  - numpy
+
+  # Core scientific stack
+  - numpy<2
+  - pandas
+  - scipy
   - matplotlib
+  - seaborn
   - scikit-learn
+
+  # Jupyter / dev
   - jupyter
   - ipykernel
+  - tqdm
+
+  # PyTorch + CUDA 11.8
   - pytorch
   - torchvision
   - torchaudio
+  - pytorch-cuda=11.8
+
+  # Useful RL / misc
+  - cloudpickle
+
   - pip:
-    - gymnasium
-    - pygame
+      - gymnasium
+      - pygame
+      - tensorboard
