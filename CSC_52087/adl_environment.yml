@@ -1,16 +1,38 @@
 name: adl_env
 channels:
-  - defaults
-  - conda-forge
   - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
 dependencies:
   - python=3.10
   - pip
+
+  # Core data stack
   - numpy<2
+  - scipy
+  - pandas
   - matplotlib
+  - seaborn
   - scikit-learn
+
+  # Data formats
+  - pyarrow
+  - h5py
+
+  # Utils
+  - tqdm
+
+  # Jupyter
   - jupyter
   - ipykernel
+
+  # PyTorch + CUDA 11.8
   - pytorch
   - torchvision
   - torchaudio
+  - pytorch-cuda=11.8
+
+  # Pip packages
+  - pip:
+      - timm
