@@ -19,6 +19,9 @@ dependencies:
   - nltk
   - scikit-learn
   - lxml
+  - transformers
+  - sentencepiece
+  - tokenizers
 
   # PyTorch + CUDA 11.8
   - pytorch
