@@ -10,7 +10,7 @@ dependencies:
   - pip
 
   # Core scientific stack
-  - numpy
+  - numpy<2.0
   - pandas
   - scipy
   - matplotlib
