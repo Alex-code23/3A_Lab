@@ -1,15 +1,35 @@
 name: nlp_env
 channels:
-  - defaults
+  - pytorch
+  - nvidia
   - conda-forge
+  - defaults
+
 dependencies:
   - python=3.10
   - pip
+
+  # Core scientific stack
   - numpy
+  - pandas
+  - scipy
+  - matplotlib
+
+  # NLP / ML
   - nltk
   - scikit-learn
+  - lxml
+
+  # PyTorch + CUDA 11.8
+  - pytorch
+  - pytorch-cuda=11.8
+  - torchvision
+  - torchaudio
+
+  # Jupyter
   - jupyter
   - ipykernel
-  - matplotlib
-  - pandas
-  - lxml
+
+  # Optional but useful
+  - tqdm
+  - seaborn
