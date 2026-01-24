@@ -19,9 +19,7 @@ dependencies:
   - nltk
   - scikit-learn
   - lxml
-  - transformers
   - sentencepiece
-  - tokenizers
 
   # PyTorch + CUDA 11.8
   - pytorch
@@ -36,3 +34,8 @@ dependencies:
   # Optional but useful
   - tqdm
   - seaborn
+
+  - pip :
+    - huggingface-hub
+    - transformers
+    - tokenizers
