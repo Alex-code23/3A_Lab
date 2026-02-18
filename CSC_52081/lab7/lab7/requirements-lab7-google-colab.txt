@@ -1,0 +1,50 @@
+# This file lists all the dependencies that are required to run CSC-52081-EP Lab7
+
+# To have more information about the format of this file, please refer to the
+# https://pip.pypa.io/en/stable/reference/requirements-file-format/
+
+
+# PyTorch #####################################################################
+
+# Note: PyTorch is already installed in Google Colab. The following lines are
+# commented out to avoid any potential conflicts.
+
+# Depending on your system, you may need to install PyTorch with a specific version
+# and with the appropriate CUDA version. Please refer to the official PyTorch
+# installation guide for more information: https://pytorch.org/get-started/locally/
+
+# torch
+# torch --index-url https://download.pytorch.org/whl/cu124    # Linux CUDA 12.4 version
+# torch --index-url https://download.pytorch.org/whl/cpu      # Linux CPU version
+
+
+# GYMNASIUM ###################################################################
+
+# C.f. https://github.com/Farama-Foundation/Gymnasium/blob/main/pyproject.toml
+
+gymnasium[box2d,classic-control]~=1.2.3    # "Box2D" and "Classic Control" environments only ("CartPole-v1" and "LunarLander-v2")
+moviepy~=2.2.1                # Required by "gym.wrappers.RecordVideo"
+
+
+# REQUIRED DEPENDENCIES #######################################################
+
+cma
+
+# The following dependencies are already installed in Google Colab:
+
+# ipywidgets          # Required for tqdm
+# jupyterlab
+# matplotlib
+# numpy
+# pandas
+# pygame
+# seaborn
+# tqdm
+
+
+# OPTIONAL DEPENDENCIES #######################################################
+
+# aim
+# optuna
+# optuna-dashboard
+# tensorboard
