@@ -1,0 +1,21 @@
+[project]
+name = "lab-9"
+version = "0.1.0"
+description = "World Models for Physical Systems Lab"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch",
+    "numpy",
+    "marimo",
+    "matplotlib",
+    "scipy",
+    "safetensors",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/physics_lab"]
